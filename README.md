@@ -88,7 +88,7 @@ pkg> activate FutureBestSeller      # this is a (extended) Julia package after a
 
 edu> new chapter "Introductionz"    # add topics, chapters, assignments, or examples!
 
-edu> rm chapter "Introductionz"     # whoops, typo!
+edu> delete chapter "Introductionz" # whoops, typo!
 
 edu> new chapter "Introduction"     # that's better!
 
