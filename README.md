@@ -16,7 +16,7 @@ that provide directly runnable copies of other developers' programs.
 In reality, the excellent dependency management provided by modern 
 package managers can be used for a variety of purposes! In short – 
 some modern software packages can be described as 
-[_educational_](https://github.com/cadojo/exploring-control-theory) or 
+[_educational_](https://github.com/ferrolho/ModernRoboticsBook.jl) or 
 [_scientific_](https://github.com/JuliaDynamics/DrWatson.jl) in nature, 
 as opposed to previously mentioned library and binary packages.
 
