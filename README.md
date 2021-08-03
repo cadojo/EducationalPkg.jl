@@ -122,8 +122,8 @@ Did you publish educational content, and later find an error? Simply push your
 changes with a new _Educational_ package version, and users will receive the 
 updates when they run `edu> update`! There are so many possibilities!
 
-Oh – sorry, was this the result of one too many herbal teas? Please disregard this 
-section.
+Oh – sorry, was this the result of one too many ~beers~ herbal teas?
+Please disregard this section.
 
 ## Credits
 
