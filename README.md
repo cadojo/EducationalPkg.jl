@@ -92,8 +92,25 @@ edu> delete chapter "Introductionz" # whoops, typo!
 
 edu> new chapter "Introduction"     # that's better!
 
-shell> tree FutureBestSeller        # a chapter's been added!
-
+shell> st FutureBestSeller          # a chapter's been added!
+.
+├── LICENSE
+├── Manifest.toml
+├── Project.toml
+├── README.md
+├── docs
+│   ├── Project.toml
+│   ├── make.jl
+│   └── src
+│       └── index.md
+├── edu
+│   └── Introduction
+│       └── Introduction.jl
+└── src
+    ├── EduREPL
+    │   └── EduREPL.jl
+    └── EducationalPkg.jl
+    
 edu> serve docs                     # serves the `Documenter` site locally with `LiveServer.jl`
 
 edu> serve pluto                    # starts a `Pluto` server in the `notebooks/pluto` directory
