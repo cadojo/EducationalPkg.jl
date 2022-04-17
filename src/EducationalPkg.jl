@@ -41,19 +41,41 @@ module EducationalPkg
 
 import Pkg
 
+using REPL
 using Pluto
 using Literate
+using ReplMaker
 using Documenter
 using DocStringExtensions
 
-include(joinpath("EduREPL", "EduREPL.jl"))
+include("API/API.jl")
 
-module EduREPLInit
-    using ..EduREPL
-    function __init__()
-        if isdefined(Base, :active_repl)
-            EduREPL.runEduREPL()
-        end
+using .API
+
+function eduparse(x)
+    return :(Meta.parse($x)) |> eval
+end
+
+function isvalid(x)
+    return true
+end
+
+function __init__()
+    if isdefined(Base, :active_repl)
+        initrepl(EducationalPkg.eduparse;
+            prompt_text = "edu> ",
+            prompt_color = :cyan,
+            start_key = '}',
+            repl = Base.active_repl,
+            mode_name = :edu,
+            show_function = nothing,
+            show_function_io = stdout,
+            valid_input_checker = EducationalPkg.isvalid,
+            keymap = REPL.LineEdit.default_keymap_dict,
+            completion_provider = REPL.REPLCompletionProvider(),
+            sticky_mode = true,
+            startup_text=false
+        )
     end
 end
 
