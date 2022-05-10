@@ -1,8 +1,6 @@
 """
 Tools for generating Julia packages for _educational_ purposes.
 
-# Extended Help
-
 ## Overview 
 
 Have you ever wanted to write a note-set, or a textbook, or a 
@@ -36,6 +34,24 @@ edu} # enter `}` in the REPL to enter `EducationalPkg` mode!
 edu} generate FutureNobelPrize
 ```
 
+# Extended Help
+
+## README
+
+$(README)
+
+## License
+
+$(LICENSE)
+
+## Imports 
+
+$(IMPORTS)
+
+## EXPORTS
+
+$(EXPORTS)
+
 """
 module EducationalPkg
 
@@ -48,9 +64,9 @@ using ReplMaker
 using Documenter
 using DocStringExtensions
 
-include("API/API.jl")
+# include("API/API.jl")
 
-using .API
+# using .API
 
 function eduparse(x)
     return :(Meta.parse($x)) |> eval

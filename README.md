@@ -2,7 +2,7 @@
 _Tools for developing educational content with [Julia](julialang.org), 
 [`Pluto.jl`](https://github.com/fonsp/Pluto.jl), 
 [`Documenter.jl`](https://github.com/JuliaDocs/Documenter.jl), 
-[`Literate.jl`](https://github.com/fredrikekre/Literate.jl), and more!_
+and more!_
 
 ## Motivation
 
@@ -24,20 +24,9 @@ as opposed to previously mentioned library and binary packages.
 
 You want to write educational content with 
 [_computational_](http://computationalthinking.mit.edu/) elements: some 
-combination of interactive homework assignments, notes with `LaTeX` math, 
+combination of interactive homework assignments, notes with `LaTeX`-formattable math, 
 clear and runnable code examples that describe a concept, nifty scripts 
 that walk through the implementation of an algorithm, etc. 
-
-There are so many great Julia packages that can help, including `Pluto`, 
-`Documenter`, `Weave`, and `Literate`. This project, `EducationalPkg`, 
-provides the _glue_ that will stick all of these wonderful packages 
-together. At it's core, `EducationalPkg` uses `Literate` to generate 
-any combination of `Markdown`, `Pluto`, `Documenter`, and `.jmd` 
-([Julia Markdown](https://github.com/JunoLab/Weave.jl)) outputs for you. 
-Continuous integration scripts are (optionally) provided as well, so in 
-one-click (or one enter key) you can `generate` Julia packages with 
-an extended directory structure that lend themselves to educational 
-content.
 
 For example, say you want to write a public note-set with concrete, 
 runnable code examples. Julia and `Documenter` can be great options!
@@ -122,7 +111,7 @@ Did you publish educational content, and later find an error? Simply push your
 changes with a new _Educational_ package version, and users will receive the 
 updates when they run `edu> update`! There are so many possibilities!
 
-Oh – sorry, was this the result of one too many herbal teas? Please disregard this 
+Oh – sorry, was this the result of one too many ~~beers~~ herbal teas? Please disregard this 
 section.
 
 ## Credits
