@@ -16,7 +16,7 @@ that provide directly runnable copies of other developers' programs.
 In reality, the excellent dependency management provided by modern 
 package managers can be used for a variety of purposes! In short – 
 some modern software packages can be described as 
-[_educational_](https://github.com/cadojo/exploring-control-theory) or 
+[_educational_](https://github.com/ferrolho/ModernRoboticsBook.jl) or 
 [_scientific_](https://github.com/JuliaDynamics/DrWatson.jl) in nature, 
 as opposed to previously mentioned library and binary packages.
 
@@ -77,12 +77,29 @@ pkg> activate FutureBestSeller      # this is a (extended) Julia package after a
 
 edu> new chapter "Introductionz"    # add topics, chapters, assignments, or examples!
 
-edu> rm chapter "Introductionz"     # whoops, typo!
+edu> delete chapter "Introductionz" # whoops, typo!
 
 edu> new chapter "Introduction"     # that's better!
 
-shell> tree FutureBestSeller        # a chapter's been added!
-
+shell> st FutureBestSeller          # a chapter's been added!
+.
+├── LICENSE
+├── Manifest.toml
+├── Project.toml
+├── README.md
+├── docs
+│   ├── Project.toml
+│   ├── make.jl
+│   └── src
+│       └── index.md
+├── edu
+│   └── Introduction
+│       └── Introduction.jl
+└── src
+    ├── EduREPL
+    │   └── EduREPL.jl
+    └── EducationalPkg.jl
+    
 edu> serve docs                     # serves the `Documenter` site locally with `LiveServer.jl`
 
 edu> serve pluto                    # starts a `Pluto` server in the `notebooks/pluto` directory
