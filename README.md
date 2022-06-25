@@ -4,6 +4,11 @@ _Tools for developing educational content with [Julia](julialang.org),
 [`Documenter.jl`](https://github.com/JuliaDocs/Documenter.jl), 
 and more!_
 
+> **Warning**
+> 
+> This is very much **in-development**! Don't install it (yet)...
+>
+
 ## Motivation
 
 We should standardize educational software distributions, just like we do for binary 
